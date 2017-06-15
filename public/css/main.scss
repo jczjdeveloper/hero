@@ -1,0 +1,242 @@
+@import "themes/default/variables";
+
+@import "lib/bootstrap/bootstrap";
+@import "lib/bootstrap-social";
+@import "lib/font-awesome/font-awesome";
+
+@import "themes/default/default";
+
+// Scaffolding
+// -------------------------
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  padding-top: 60px;
+  margin-bottom: 75px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+
+  p, ul {
+    margin-bottom: 0;
+  }
+}
+
+// Input Fields
+// -------------------------
+
+textarea {
+  resize: vertical;
+}
+
+// Navbar
+// -------------------------
+
+.navbar-nav img {
+  width: 30px;
+  height: 30px;
+  margin: -15px 15px -15px;
+}
+
+// Alerts
+// -------------------------
+
+.alert {
+  margin-top: 20px;
+}
+
+// Thumbnails
+// -------------------------
+
+.thumbnail {
+  padding: 0;
+  border-radius: 0;
+  box-shadow: 0 0 5px #ccc, inset 0 0 0 #000;
+}
+
+// Font Icons
+// -------------------------
+
+.fa {
+  margin-right: 6px;
+}
+
+
+// File upload
+// -------------------------
+
+#landingzone {
+  height: 500px;
+
+  img {
+    width: 40%;
+    float: left;
+    margin-right: 10px;
+  }
+
+
+  .toprow{
+    padding-top: 8.33333%;
+    padding-bottom: 4%;
+    height: 50%;
+
+    .leftcol {
+      height: 100%;
+      border-top: solid 2px #CCCCCC;
+      border-left: solid 2px #CCCCCC;
+
+      .middelrow {
+        padding-top: 16.66666%;
+        padding-left: 16.66666%;
+        height: 100%;
+
+        > div {
+          border-top: solid 2px #CCCCCC;
+          border-left: solid 2px #CCCCCC;
+          height: 100%;
+
+        }
+      }
+
+      .innerrow {
+        padding-top: 16.66666%;
+        padding-left: 16.66666%;
+        height: 100%;
+
+        > div {
+          border-top: solid 2px #CCCCCC;
+          border-left: solid 2px #CCCCCC;
+          height: 100%;
+
+        }
+      }
+    }
+
+    .rightcol {
+      height: 100%;
+      border-top: solid 2px #CCCCCC;
+      border-right: solid 2px #CCCCCC;
+
+      .middelrow {
+        padding-top: 16.66666%;
+        padding-right: 16.66666%;
+        height: 100%;
+
+        > div {
+          border-top: solid 2px #CCCCCC;
+          border-right: solid 2px #CCCCCC;
+          height: 100%;
+
+        }
+      }
+
+      .innerrow {
+        padding-top: 16.66666%;
+        padding-right: 16.66666%;
+        height: 100%;
+
+        > div {
+          border-top: solid 2px #CCCCCC;
+          border-right: solid 2px #CCCCCC;
+          height: 100%;
+
+        }
+      }
+    }
+
+
+
+  }
+
+  .bottomrow{
+    padding-top: 4%;
+    padding-bottom: 8.33333%;
+    height: 50%;
+
+    .leftcol {
+      height: 100%;
+      border-bottom: solid 2px #CCCCCC;
+      border-left: solid 2px #CCCCCC;
+
+      .middelrow {
+        padding-bottom: 16.66666%;
+        padding-left: 16.66666%;
+        height: 100%;
+
+        > div {
+          border-bottom: solid 2px #CCCCCC;
+          border-left: solid 2px #CCCCCC;
+          height: 100%;
+        }
+      }
+
+      .innerrow {
+        padding-bottom: 16.66666%;
+        padding-left: 16.66666%;
+        height: 100%;
+
+        > div {
+          border-bottom: solid 2px #CCCCCC;
+          border-left: solid 2px #CCCCCC;
+          height: 100%;
+        }
+      }
+    }
+
+    .rightcol {
+      height: 100%;
+      border-bottom: solid 2px #CCCCCC;
+      border-right: solid 2px #CCCCCC;
+
+      .middelrow {
+        padding-bottom: 16.66666%;
+        padding-right: 16.66666%;
+        height: 100%;
+
+        > div {
+          border-bottom: solid 2px #CCCCCC;
+          border-right: solid 2px #CCCCCC;
+          height: 100%;
+        }
+      }
+
+      .innerrow {
+        padding-bottom: 16.66666%;
+        padding-right: 16.66666%;
+        height: 100%;
+
+        > div {
+          border-bottom: solid 2px #CCCCCC;
+          border-right: solid 2px #CCCCCC;
+          height: 100%;
+        }
+      }
+
+    }
+  }
+}
+
+// Landing zone animation
+// -------------------------
+#landingzone.dragover div {
+  animation: move-in-steps 1.5s infinite;
+}
+
+@keyframes move-in-steps {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
